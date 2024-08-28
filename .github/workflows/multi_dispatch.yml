@@ -11,7 +11,7 @@ on:
           description: 'Environment to deploy'
           required: true
           default: 'dev'
-          type: string
+          type: choice
           options:
             - preprod
             - prod
