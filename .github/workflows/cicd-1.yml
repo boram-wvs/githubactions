@@ -5,8 +5,8 @@ on:
       - opened
       - synchronize
       - closed
-    branches:
-      - main
+    #branches:
+      #- main
     paths:
       - '**'
 
