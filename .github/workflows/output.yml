@@ -1,0 +1,13 @@
+name: output-workflow
+on: push
+
+jobs:
+  step1-output:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        id: step1
+        run: echo "foo=bar" >> "$GITHUB_OUTPUT"
+      - name: step2
+        id: step2
+        run: echo "step2" >> "${{ steps.step1.outputs.GITHUB_OUTPUT }}"
