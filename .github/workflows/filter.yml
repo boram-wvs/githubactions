@@ -2,7 +2,7 @@ name: filter-workflow
 on:
   push:
     branches:
-      - master
+      - main
       - develop
 
 jobs:
