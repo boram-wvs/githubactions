@@ -8,5 +8,5 @@ jobs:
   tag-filter:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: step1
         run: "echo tag: ${{ github.ref }}"
