@@ -4,6 +4,7 @@ on:
     paths:
       - 'README.md'
       - 'src/**'
+      - '!test/**'
 
 jobs:
     path-job:
