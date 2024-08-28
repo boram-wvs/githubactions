@@ -1,0 +1,12 @@
+name: tag-filter
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  tag-filter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        run: "echo tag: ${{ github.ref }}"
