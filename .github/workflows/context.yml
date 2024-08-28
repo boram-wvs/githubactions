@@ -12,5 +12,5 @@ jobs:
           echo "github tree: ${{ toJSON(github) }}"
       - name : step2
         run: |
-          echo "repository tree: ${{ github.repository }}"
-          echo "repository tree: ${{ github.event_name }}"
+          echo "repository repository: ${{ github.repository }}"
+          echo "repository event_name: ${{ github.event_name }}"
